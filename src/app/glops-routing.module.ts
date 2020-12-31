@@ -14,4 +14,4 @@ const routes: Routes = [
     RouterModule
   ]
 })
-export class FormsRoutingModule { }
+export class GlopsRoutingModule { }

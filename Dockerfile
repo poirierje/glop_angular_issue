@@ -1,12 +1,9 @@
-# base image
 FROM node:15.5-slim as build
-
-# set working directory
 WORKDIR /app
 
-RUN chgrp -R 0 /app && chmod -R g+rwX /app
+# RUN chgrp -R 0 /app && chmod -R g+rwX /app
 
-ENV PATH /app/node_modules/.bin:$PATH
+# ENV PATH /app/node_modules/.bin:$PATH
 
 # install and cache app dependencies
 COPY package.json ./
@@ -18,9 +15,6 @@ COPY tsconfig.json .
 COPY tsconfig.app.json /app
 COPY /nginx/nginx.conf .
 COPY /src ./src
-
-# 'conf' value comes from .env file
-ARG conf
 
 # generate build
 RUN npm run build:dev

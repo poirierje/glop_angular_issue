@@ -1,20 +1,9 @@
 {
   "name": "glop_v2_front",
-  "version": "2.0.0",
-  "description": "glop.",
-  "author": "",
-  "license": "",
   "scripts": {
-    "ng": "ng",
     "start": "ng serve --host 0.0.0.0",
-    "build": "ng build",
-    "build:prod": "ng build --configuration=production",
-    "build:dev": "ng build --configuration=dev",
-    "test": "ng test",
-    "test:cov": "ng test --watch=false --code-coverage",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
-  },
+    "build:dev": "ng build --configuration=dev"
+    },
   "private": true,
   "dependencies": {
     "@angular/animations": "~10.2.0",
@@ -25,7 +14,6 @@
     "@angular/platform-browser": "~10.2.0",
     "@angular/platform-browser-dynamic": "~10.2.0",
     "@angular/router": "~10.2.0",
-    "bulma": "^0.9.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"

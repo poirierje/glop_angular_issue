@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 @NgModule({
   imports: [
     RouterModule.forRoot( [
-      { path: '', redirectTo: '/glops', pathMatch: 'full' }
+      // { path: '', redirectTo: '/glops', pathMatch: 'full' }
     ])
   ],
   exports: [

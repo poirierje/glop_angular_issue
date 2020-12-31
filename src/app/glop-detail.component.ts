@@ -6,11 +6,4 @@ import { GlopListComponent } from './glop-list.component';
   template: `<div>Glop-detail component.</div>`,
   styleUrls: []
 })
-export class GlopDetailComponent {
-
-  constructor(
-    // private glopListComponent: GlopListComponent
-    ) {
-  }
-
-}
+export class GlopDetailComponent { }
