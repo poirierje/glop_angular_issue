@@ -1,0 +1,1 @@
+# Template project to reproduce problem with import using docker

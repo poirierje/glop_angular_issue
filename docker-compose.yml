@@ -1,0 +1,14 @@
+version: "3.5"
+
+services:
+
+  web-app:
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: glop
+    volumes:
+      - ./nginx/dev.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - 80:80
